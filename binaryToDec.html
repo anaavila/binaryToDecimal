@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Binary To Decimal</title>
+</head>
+<body>
+<script>
+	/**
+	 * Program: Binary To Decimal
+	 *
+	 * @Author Ana Avila (github.com/anaavila)
+	 *
+	 * @Date December, 2018
+	 *
+	 * @Description
+	 * Simple program that converts binary numbers to decimal
+	 * 
+	 */
+
+	// var binNum = "1010";
+	var binNum = prompt("Enter binary numer:");
+	var base = 2;
+	var power = 0;
+	var dec = 0;
+
+	for(var i = binNum.length-1; i>=0; i--) {
+		if (binNum[i] == 1) {
+			dec = dec + base**power;
+		}
+		power++;
+	}
+	alert(dec);
+</script>
+</body>
+</html>
